@@ -6,7 +6,7 @@
 
 1. locates osu! folder from the Start Menu shortcut
 2. deletes `.require_update` file and creates `_staging` file to prevent osu! from updating
-3. replaces `osu!auth.dll` with old version embedded into the executable
+3. backs up current `osu!auth.dll` and replaces it with old version embedded into the executable
 
 ## Development
 
