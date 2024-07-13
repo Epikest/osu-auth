@@ -1,5 +1,9 @@
 # osu!auth
 
+[![.github/workflows/ci.yml](https://github.com/Epikest/osu-auth/actions/workflows/ci.yml/badge.svg)](https://github.com/Epikest/osu-auth/actions/workflows/ci.yml)
+
+---
+
 1. locates osu! folder from the Start Menu shortcut
 2. deletes `.require_update` file and creates `_staging` file to prevent osu! from updating
 3. replaces `osu!auth.dll` with old version embedded into the executable
