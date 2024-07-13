@@ -1,0 +1,20 @@
+name: osu-auth
+version: 0.1.0
+
+authors:
+  - epik <epik@waifu.club>
+
+repository: "https://github.com/Epikest/osu-auth"
+
+targets:
+  osu!auth:
+    main: src/osu!auth.cr
+
+dependencies:
+  baked_file_system:
+    github: schovi/baked_file_system
+    branch: master
+
+crystal: '>= 1.11.2'
+
+license: MIT
