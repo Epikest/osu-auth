@@ -54,6 +54,7 @@ begin
 
 	if !File.exists?("#{osu_path}\\osu!auth.dll.backup")
 		File.rename("#{osu_path}\\osu!auth.dll", "#{osu_path}\\osu!auth.dll.backup")
+		puts "Backed up #{File.size("#{osu_path}\\osu!auth.dll.backup")} bytes from current osu!auth.dll.".colorize(:green)
 		File.write("#{osu_path}\\osu!auth.dll", osu_auth.read)
 		puts "Successfully written #{osu_auth.size} bytes to osu!auth.dll.".colorize(:green)
 	else
